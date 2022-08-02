@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/* colors */
+/* 
+main: rgba(24, 196, 24, 0.995);
+
+*/
+
+
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "aside nav nav"
+    "aside main main";
+
+}
+
+/* SIDEBAR */
+
+aside {
+    grid-area: aside;
+    height: 100%;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    background: rgba(24, 196, 24, 0.995);
+}
+
+.main-logo {
+    border-radius: 50%;
+    height: 10rem;
+}
+
+aside a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: all 0.3s;
+}
+
+.actions-top a:hover,
+.actions-top a:active {
+    border: 2px solid;
+}
+
+.actions-top a {
+    font-size: 20px;
+    color: white;
+    margin: 1rem;
+    padding:0.5rem;
+    border-radius: 2rem;
+}
+
+.actions-btm a {
+    color: rgba(255, 255, 255, 0.614);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0.2rem;
+}
+
+.actions-btm a:hover,
+.actions-btm a:active {
+    border-bottom: 2px solid;
+}
+
+/* navigation section */
+nav {
+    grid-area: nav;
+}
+
+
+
+
+main { 
+    grid-area: main;
+}
