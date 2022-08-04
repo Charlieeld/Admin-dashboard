@@ -20,9 +20,13 @@ main: rgba(24, 196, 24, 0.995);
 .grid-container {
     display: grid;
     height: 100vh;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr;
     grid-template-areas: 
     "aside nav nav"
+    "aside main main"
     "aside main main";
+    
 
 }
 
@@ -31,7 +35,7 @@ main: rgba(24, 196, 24, 0.995);
 aside {
     grid-area: aside;
     height: 100%;
-    width: 18rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,7 +45,7 @@ aside {
 }
 
 .main-logo {
-    border-radius: 50%;
+    border-radius: 25%;
     height: 10rem;
 }
 
@@ -81,11 +85,92 @@ aside a {
 /* navigation section */
 nav {
     grid-area: nav;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+}
+
+.navbar input {
+    width: 40rem;
+    height: 3rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    background: rgb(223, 222, 222);
+    border: none;
+    border-radius: 2rem;
+}
+
+.user {
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-left {
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+img {
+    border-radius: 50%;
 }
 
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
 
+.user-right {
+    justify-content: end;
+}
+
+.social-buttons {
+    display: flex;
+    margin: auto;
+    gap: 3rem;
+    justify-content: center;
+}
+
+/* Main area / Articles */
 
 main { 
     grid-area: main;
+    background: rgb(229, 229, 229);
 }
+
+.main-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 1rem;
+
+}
+
+.feed-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    height: 100%;
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px black;
+    
+}
+
+.trending {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+

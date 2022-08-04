@@ -16,26 +16,27 @@
         <!-- Navbar accross the top of the page -->
         <nav class="navbar">
             <!-- Left hand side of navbar -->
-            <div class="container">
-                <input type="" placeholder="Search.....">
-                <div class="user">
-                    <img class="img-med" height="75x" src="/Imgs/img_avatar 1.png" alt="Img of user avater">
+            <div class="container flex-container">
+                <div class="user user-left">
+                    <img class="img img-med" height="75px" src="/Imgs/img_avatar 1.png" alt="Img of user avater">
                     <p>Charlie Eldridge</p>
                     <i class="fa-solid fa-bell"></i>
-                </div>
-            </div>
-            <!-- right hand side of navbar -->
-            <div class="container">
-                <div class="user">
-                    <img class="img-sml" height="50px" src="/Imgs/img_avatar 1.png" alt="Img of user avater">
-                    <p>Charlie</p>
-                    <i class="fa-solid fa-angle-down"></i>
                 </div>
                 <div class="social-buttons">
                     <button class="btn-primary">Post</button>
                     <button class="btn-primary">Edit</button>
                     <button class="btn-primary">Share</button>
                 </div>
+            </div>
+            <!-- right hand side of navbar -->
+            <div class="container">
+                <div class="user user-right">
+                    <img class="img img-sml" height="50px" src="/Imgs/img_avatar 1.png" alt="Img of user avater">
+                    <p>Charlie</p>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <input type="" placeholder="Search.....">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </nav>
         <!-- Sidebar taking up the length of the page -->
@@ -60,30 +61,36 @@
             </div>
         </aside>
         <!-- Main page with articles, feed and trending section -->
-        <main>
-            <div class="feed">
+        <main class="main-container">
+            <div class="feed-container">
+                    <div class="card">
+                        <p>There will be an article in here</p>
+                    </div>
+                    <div class="card">
+                        <p>There will be an article in here</p>
+                    </div>     
+                    <div class="card">
+                        <p>There will be an article in here</p>
+                    </div>
+                    <div class="card">
+                        <p>There will be an article in here</p>
+                    </div> 
+                    <div class="card">
+                        <p>There will be an article in here</p>
+                    </div>
+                    <div class="card">
+                        <p>There will be an article in here</p>
+                    </div>
+                </div>    
+            <div class="trending">
                 <div class="card">
-                    <p>There will be an article in here</p>
+                    <p>Trending</p>
                 </div>
                 <div class="card">
-                    <p>There will be an article in here</p>
-                </div>
-                <div class="card">
-                    <p>There will be an article in here</p>
-                </div>
-                <div class="card">
-                    <p>There will be an article in here</p>
-                </div>
-                <div class="card">
-                    <p>There will be an article in here</p>
-                </div>
-                <div class="card">
-                    <p>There will be an article in here</p>
-                </div>
-                <div class="card">
-                    <p>There will be an article in here</p>
+                    <p>Profiles</p>
                 </div>
             </div>
+        </div>
         </main>   
     </div>
 </body>
